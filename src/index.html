@@ -7,13 +7,17 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Ryan Coplien - Cloud Resume</title>
-	<meta name="description" content="Cloud resume of Ryan Coplien">
+	<title>Ryan Coplien - Cloud &amp; Identity Security</title>
+	<meta name="description" content="Cloud resume of Ryan Coplien, Senior Systems Administrator focused on cybersecurity: identity and access management, cloud security, and security automation. Security+, SC-300 and Netskope certified. Interested in using and securing AI.">
+	<meta name="theme-color" content="#161415">
+	<meta property="og:title" content="Ryan Coplien - Cloud Resume">
+	<meta property="og:description" content="Senior Systems Administrator focused on identity, cloud security and automation. Security+, SC-300 and Netskope certified.">
+	<meta property="og:type" content="website">
 	<meta name="author" content="Ryan Coplien">
 
    <!-- Mobile Specific Metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, ">
 
 	<!-- CSS
     ================================================== -->
@@ -21,6 +25,7 @@
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/custom.css">
 
    <!-- Script
    ================================================== -->
@@ -46,6 +51,7 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#security">Security</a></li>
 	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
             <!-- <li><a class="smoothscroll" href="#portfolio">Projects</a></li> -->
             <!-- <li><a href="https://github.com/RyanCoplien" target="_blank">GitHub</a></li> -->
@@ -57,19 +63,19 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Hi, I'm Ryan.</h1>
-            <h3>I'm a Senior Systems Administrator that is managing and securing cloud technologies. Welcome to
-            my resume that is entirely hosted using Microsoft Azure. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            <h3>I'm a Senior Systems Administrator focused on security: protecting identities, locking down cloud
+            environments, and automating the controls that keep them safe, including the AI tools now woven into how we work. This resume is entirely hosted on Microsoft Azure. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
             <hr />
             <ul class="social">
                <!-- <li><a href="https://github.com/RyanCoplien" target="_blank"><i class="fa fa-github"></i></a></li> -->
-               <li><a href="https://www.linkedin.com/in/ryan-coplien/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/ryan-coplien/" target="_blank"><i class="fa fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
             </ul>
          </div>
       </div>
 
       <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+         <a class="smoothscroll" href="#about" aria-label="Scroll down"><i class="icon-down-circle"></i></a>
       </p>
 
    </header> <!-- Header End -->
@@ -83,7 +89,7 @@
 
          <div class="three columns">
 
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="Portrait of Ryan Coplien" />
 
          </div>
 
@@ -91,30 +97,94 @@
 
             <h2>About Me</h2>
             
-            <p> I am currently a Senior Systems Administrator with over 9 years of professional experience in Information Technology, Information Security,
-            and Software Development, and many more years of technical knowledge and interest. As of now, I am working heavily with identity and access management,
-            cloud design, and automation using Python, PowerShell, and Infrastructure as Code.
+            <p> I am a Senior Systems Administrator with over <span id="about-years">9</span> years of professional experience in Information Technology, Information Security,
+            and Software Development, and many more years of technical knowledge and interest. My work centers on security: identity and access management,
+            securing cloud environments, and using Python, PowerShell, and Infrastructure as Code to automate and enforce controls consistently. I also use AI tools in my own engineering work and focus on how to adopt them safely: governing access, protecting data, and managing the new risks AI introduces. I'm looking to bring that
+            experience to a dedicated security role.
             </p>
 
-            <!--<p> Please download my complete resume below!
+            <ul class="focus-chips" aria-label="Areas of focus">
+               <li class="hot">Identity &amp; Access Management</li>
+               <li class="hot">Cloud Security</li>
+               <li class="hot">Microsoft Entra ID</li>
+               <li class="hot">Secure Service Edge (Netskope)</li>
+               <li class="hot">AI Security &amp; Governance</li>
+               <li>AI-Assisted Engineering</li>
+               <li>Microsoft Azure</li>
+               <li>Security Automation</li>
+               <li>Infrastructure as Code</li>
+               <li>Python</li>
+               <li>PowerShell</li>
+            </ul>
 
-            </p>
-            <div class="row">
-
-               <div class="columns download">
-                  <p>
-                     <a href="downloads/Ryan Coplien Resume 2024.pdf" class="button" target="_blank" download><i class="fa fa-download"></i>Download Resume</a>
-                     <a href="#about" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>-->
-
-            </div> <!-- end row -->
+            <ul class="stats">
+               <li><strong id="stat-years" data-since="2016-10">9+</strong><span>Years in IT</span></li>
+               <li><strong id="stat-certs">7</strong><span>Certifications</span></li>
+               <li><strong id="stat-ms">3</strong><span>Microsoft Certs</span></li>
+            </ul>
 
          </div> <!-- end .main-col -->
 
       </div>
 
    </section> <!-- About Section End-->
+
+
+   <!-- Security Section
+   ================================================== -->
+   <section id="security">
+
+      <div class="row">
+
+         <div class="three columns header-col">
+            <h1><span>Security</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="sec-grid">
+
+               <div class="sec-card">
+                  <i class="fa fa-key"></i>
+                  <h3>Identity &amp; Access</h3>
+                  <p>Identity is the new perimeter. Certified in Microsoft identity administration (SC-300), with day-to-day focus on access management.</p>
+                  <span class="sec-cert">SC-300</span>
+               </div>
+
+               <div class="sec-card">
+                  <i class="fa fa-cloud"></i>
+                  <h3>Cloud Security</h3>
+                  <p>Designing and administering Azure environments, plus Netskope One for secure access to cloud and web resources.</p>
+                  <span class="sec-cert">AZ-104</span><span class="sec-cert">Netskope One</span>
+               </div>
+
+               <div class="sec-card">
+                  <i class="fa fa-cogs"></i>
+                  <h3>Security Automation</h3>
+                  <p>Python, PowerShell, and Infrastructure as Code to make controls repeatable, auditable, and consistent.</p>
+               </div>
+
+               <div class="sec-card">
+                  <i class="fa fa-magic"></i>
+                  <h3>AI Security &amp; Adoption</h3>
+                  <p>I use AI assistants and coding agents in my own work, and approach them as a security engineer: least-privilege access for AI tools and agents, data loss prevention for generative AI, and awareness of risks such as prompt injection, data leakage and shadow AI.</p>
+                  <span class="sec-cert">Responsible AI Use</span><span class="sec-cert">Data Protection</span>
+               </div>
+
+               <div class="sec-card">
+                  <i class="fa fa-shield"></i>
+                  <h3>Security Fundamentals</h3>
+                  <p>A strong base in networking and security principles, backed by CompTIA credentials.</p>
+                  <span class="sec-cert">Security+</span><span class="sec-cert">Network+</span>
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </section> <!-- Security Section End-->
 
 
    <!-- Resume Section
@@ -198,7 +268,7 @@
                <div class="twelve columns">
 
                   <h3>University of Wisconsin - Platteville</h3>
-                  <p class="info">Bachelor of Science in Computer Science<span></p>
+                  <p class="info">Bachelor of Science in Computer Science</p>
 
                </div>
 
@@ -223,8 +293,8 @@
 
                <div class="twelve columns">
 
-                  <h3>Microsoft Certified: Identity and Access Administrator Associate</h3>
-                  <p class="info">SC-300<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/api/credentials/share/en-us/RyanCoplien-3260/14175133A3DE3A0D?sharingId=AFE48B14815B9F29" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued March 2025</em></p></p>
+                  <h3><span class="provider netskope"></span>Netskope One Administration Accreditation<span class="sec-tag">Security</span></h3>
+                  <p class="info">Netskope<span>&bull;</span><em class="certID">ID: 295773574</em><span>&bull;</span><em class="date">Issued November 2025</em></p>
 
                </div>
 
@@ -234,8 +304,19 @@
 
                <div class="twelve columns">
 
-                  <h3>Microsoft Certified: Azure Administrator Associate</h3>
-                  <p class="info">AZ-104<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/en-us/users/ryancoplien-3260/credentials/fe2d03c4d987e500" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued September 2023</em></p></p>
+                  <h3><span class="provider ms"></span>Microsoft Certified: Identity and Access Administrator Associate<span class="sec-tag">Security</span></h3>
+                  <p class="info">SC-300<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/api/credentials/share/en-us/RyanCoplien-3260/14175133A3DE3A0D?sharingId=AFE48B14815B9F29" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued March 2025</em></p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3><span class="provider ms"></span>Microsoft Certified: Azure Administrator Associate</h3>
+                  <p class="info">AZ-104<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/en-us/users/ryancoplien-3260/credentials/fe2d03c4d987e500" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued September 2023</em></p>
 
                </div>
 
@@ -245,8 +326,8 @@
 
                <div class="twelve columns">
 
-                  <h3>Microsoft Certified: Azure Fundamentals</h3>
-                  <p class="info">AZ-900<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/en-us/users/ryancoplien-3260/credentials/209eca3e44204556" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued May 2023</em></p></p>
+                  <h3><span class="provider ms"></span>Microsoft Certified: Azure Fundamentals</h3>
+                  <p class="info">AZ-900<span>&bull;</span><em class="certID"><a href="https://learn.microsoft.com/en-us/users/ryancoplien-3260/credentials/209eca3e44204556" target="_blank">Microsoft Verify</a></em><span>&bull;</span><em class="date">Issued May 2023</em></p>
 
                </div>
 
@@ -256,7 +337,7 @@
 
                <div class="twelve columns">
 
-                  <h3>CompTIA Security+</h3>
+                  <h3><span class="provider comptia"></span>CompTIA Security+<span class="sec-tag">Security</span></h3>
                   <p class="info">SY0-601<span>&bull;</span><em class="certID">ID: HPM912HY3BBEQV3F</em><span>&bull;</span><em class="date">Issued February 2023</em></p>
 
                </div>
@@ -267,7 +348,7 @@
 
                <div class="twelve columns">
 
-                  <h3>CompTIA Network+</h3>
+                  <h3><span class="provider comptia"></span>CompTIA Network+</h3>
                   <p class="info">N10-007<span>&bull;</span><em class="certID">ID: M0935RC5C2BE1E3B</em><span>&bull;</span><em class="date">Issued June 2022</em></p>
 
                </div>
@@ -278,7 +359,7 @@
 
                <div class="twelve columns">
 
-                  <h3>CompTIA A+</h3>
+                  <h3><span class="provider comptia"></span>CompTIA A+</h3>
                   <p class="info">220-1001/1002<span>&bull;</span><em class="certID">ID: PEDB52ZPTPVQQMCB</em><span>&bull;</span><em class="date">Issued July 2021</em></p>
 
                </div>
@@ -301,11 +382,11 @@
 
             <ul class="social-links">
                <!-- <li><a href="https://github.com/RyanCoplien" target="_blank"><i class="fa fa-github"></i></a></li> -->
-               <li><a href="https://www.linkedin.com/in/ryan-coplien/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/ryan-coplien/" target="_blank"><i class="fa fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
             </ul>
 
             <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>&copy; <span id="year">2025</span> Ryan Coplien</li>
                <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
             </ul>
 
@@ -319,7 +400,7 @@
 
    <!-- Java Script
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
@@ -328,6 +409,23 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script>
+   // Keep the footer year and About stats current automatically.
+   (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      $("year").textContent = new Date().getFullYear();
+
+      var yearsEl = $("stat-years");
+      var since = yearsEl.getAttribute("data-since").split("-");
+      var now = new Date();
+      var years = now.getFullYear() - +since[0] - (now.getMonth() + 1 < +since[1] ? 1 : 0);
+      yearsEl.textContent = years + "+";
+      $("about-years").textContent = years - 1;
+
+      $("stat-certs").textContent = document.querySelectorAll(".certification .item").length;
+      $("stat-ms").textContent = document.querySelectorAll(".certification .provider.ms").length;
+   })();
+   </script>
 
 </body>
 
